@@ -8,17 +8,20 @@ int main(){
 	cout<<"Enter the number";
 	cin>>num;
 	
+
+	if (num==0){
+		cout<<"The entered number is zero enter another number"<<" /n";
+		cin>>num;
+	}
+	
 	if (num>0){
-		cout<<"The entered number is positive /n";
+		cout<<"The entered number is positive "<<"/n";
 	}
 	if (num<0){
-		cout<<"The entered number is negative /n";
-	}
-	if (num==0){
-		cout<<"The entered number is zero/n";
+		cout<<"The entered number is negative "<<"/n";
 	}
 	else{
-		cout<<"end of program/n";
+		cout<<"end of program ";
 		
 	return 0;
 		
