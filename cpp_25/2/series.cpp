@@ -13,11 +13,13 @@ int main(){
 		cout<<"(1/"<<i<<")^2 +"<<"\t";
 	}
     //for the final value
-	for(int i=1;i<=terms;i++){
+	for(float i=1;i<=terms;i++){
 		add=sqrt(1/i);
-        final+=add;
+        final=final+add;
         cout<<add<<"+";
 	}
+    //Important thing if i in the loop is int then 1/i will be o.something =0 as a int
+    //so declare the i element of loop as float
 
     cout<<"\t = "<<final;
     return 0;
