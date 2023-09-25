@@ -22,7 +22,7 @@ int main(){
 		//for printing the pattern
 		epsilon=((num-i-1)*2+1);
 		for(int i=0;i<epsilon;i++){
-			cout<<"* \t";
+			cout<<"*\t";
 		}
 		cout<<"\n";
 		
