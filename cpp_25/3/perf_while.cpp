@@ -9,8 +9,8 @@ int main(){
     while(i<((num/2)+1)){
         if(num%i==0){
             perf+=i;
-            i=++i;
         }
+        i=++i;
     }
     if(num==perf){
         cout<<"The entered number"<<num<<" is perfect";
