@@ -45,7 +45,7 @@ class vector{
 			val1=a*x;
 			val2=b*y;
 			val3=c*z;
-			cout<<val1<<"i +"<<val2<<"j +"<<val3<<"k";		
+			cout<<val1+val2+val3;		
 			cout<<"\n";
 		}
 };
