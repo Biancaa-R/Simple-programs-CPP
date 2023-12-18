@@ -124,6 +124,7 @@ class Stack{
 					}
 					int pop_value=ptr->value;
 					//deletion of node:
+					ptr_minus->next=NULL;
 					
 					top--;
 					return pop_value;
@@ -138,7 +139,16 @@ class Stack{
 			return -1;
 		}
 		else{
-			return arr1[top];
+			if(top=0){
+				return head->value;
+			}
+			else{
+				Node * ptr=head;
+				while(ptr->next!=NULL){
+					ptr=ptr->next;
+				}	
+				cout<<ptr->value;			
+			}
 		}
 		}
 		int count()
