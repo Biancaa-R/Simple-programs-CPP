@@ -2,17 +2,17 @@
 
 Operations
 
-Stack – create an empty stack
+Stack ï¿½ create an empty stack
 
-~Stack – destroy the memory of stack
+~Stack ï¿½ destroy the memory of stack
 
-Push – allows adding an element at the top of the stack
+Push ï¿½ allows adding an element at the top of the stack
 
-Pop – allows removing an element from the top of the stack
+Pop ï¿½ allows removing an element from the top of the stack
 
-Top – return the element at the top
+Top ï¿½ return the element at the top
 
-Print –display all the elements of stack*/
+Print ï¿½display all the elements of stack*/
 
 # include <iostream>
 # include <stdbool.h>
@@ -31,7 +31,7 @@ class Node{
 		}
 		Node(int v){
 			value=v;
-			next=NULL
+			next=NULL;
 		}
 	
 };
@@ -147,7 +147,8 @@ class Stack{
 				while(ptr->next!=NULL){
 					ptr=ptr->next;
 				}	
-				cout<<ptr->value;			
+				//cout<<ptr->value;		
+                return ptr->value;	
 			}
 		}
 		}
@@ -159,19 +160,25 @@ class Stack{
 				cout<<"The stack is empty";
 				//return sum;
 			}
-			else{
-				for(int i=0;i<=top;i++){
-					sum+=arr1[i];
-				}
+            
+			else {
+                Node* ptr=head;
+                while(ptr!=NULL){
+                    sum+=ptr->value;
+                    ptr=ptr->next;
+                }
+			}
 				return sum;
 			}
-		}
+		
 		
 		void display()
 		{
-			for(int i=0;i<=top;i++){
-				cout<<arr1[i]<<"\t";
-			}
+            Node* ptr=head;
+            while(ptr!=NULL){
+                cout<<ptr->value<<"\t";
+                ptr=ptr->next;
+            }
 			cout<<"\n";
 		}
 };
@@ -196,7 +203,8 @@ int main()
 	Stack s1;
 	int value;
 	while (true){
-		
+
+            Node * n=new Node;
 			cout<<"Enter your choice number\n";
 			cin>>choice;
 			
@@ -229,7 +237,8 @@ int main()
 
 				cout<<"Enter the input value\n";
 				cin>>value;
-				s1.push(value);
+                n->value=value;
+				s1.push(n);
 				break;
 			case(4):
 				//int value;
