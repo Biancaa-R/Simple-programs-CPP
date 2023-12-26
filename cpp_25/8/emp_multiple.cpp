@@ -18,7 +18,7 @@ Step 2: (Determine the Base Index) The base index remains at 100.
 
 Step 3: (Compute the Percentage Increase in CPI) To calculate the percentage increase in CPI, subtract the base index from the current CPI, divide the result by the base index, and then multiply by 100 to obtain the percentage increase.
 
-Percentage increase in CPI = ((150 – 100)/100) x 100 = 50%
+Percentage increase in CPI = ((150 â€“ 100)/100) x 100 = 50%
 
 Step 4: (Calculate the DA Percentage) The DA percentage is determined by multiplying the percentage increase in CPI by the predefined factor.
 
@@ -102,7 +102,7 @@ int main(){
 	for(int i=0;i<num;i++){
 		cout<<"Creating employee "<<i+1;
 		arr1[i].emp_initial();
-		//fflush(stdin);
+		fflush(stdin);
 		arr2[i].sal_initial();
 		cout<<"Entered "<<i+1<<"Successfully\n";
 		
