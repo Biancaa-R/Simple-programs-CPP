@@ -1,0 +1,4 @@
+//shape:
+//sphere
+//cylinder
+//squares
